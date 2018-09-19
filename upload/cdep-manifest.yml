@@ -1,0 +1,20 @@
+coordinate:
+  groupId: com.github.h0ngyue
+  artifactId: libyuv
+  version: 1.0.0 
+license:
+  url: git@github.com:h0ngyue/libyuv.git
+interfaces:
+  headers:
+    file: libyuv-headers.zip
+    include: include
+    sha256: ea32cbb0a8906dbc04e3c05cbe75ba78add63c503114918503bdf00b930b9f06
+    size: 47625
+android:
+  archives:
+    - file: libyuv-armeabi-v7a.zip
+      sha256: 1fe01462379d8e05f309d76f6e7d9934f0418dbf0b100e5d3e51ffb31241d61f
+      size: 386588
+      abi: armeabi-v7a
+      platform: 14
+      libs: [libyuv.a]

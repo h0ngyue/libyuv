@@ -1,5 +1,7 @@
 # Prerequisites
 *.d
+staging/
+/upload/*.zip
 
 # Object files
 *.o
