@@ -265,6 +265,16 @@ int NV12ToABGR(const uint8_t* src_y,
                int width,
                int height);
 
+// Convert NV12 to ABGR (BT.709).
+int NV12BT709ToABGR(const uint8_t* src_y,
+                    int src_stride_y,
+                    const uint8_t* src_uv,
+                    int src_stride_uv,
+                    uint8_t* dst_abgr,
+                    int dst_stride_abgr,
+                    int width,
+                    int height);
+
 // Convert NV21 to ABGR.
 LIBYUV_API
 int NV21ToABGR(const uint8_t* src_y,

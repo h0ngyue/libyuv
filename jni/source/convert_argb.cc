@@ -1807,6 +1807,18 @@ int NV12ToABGR(const uint8_t* src_y,
                           dst_stride_abgr, &kYvuI601Constants, width, height);
 }
 
+int NV12BT709ToABGR(const uint8_t* src_y,
+                    int src_stride_y,
+                    const uint8_t* src_uv,
+                    int src_stride_uv,
+                    uint8_t* dst_abgr,
+                    int dst_stride_abgr,
+                    int width,
+                    int height) {
+  return NV21ToARGBMatrix(src_y, src_stride_y, src_uv, src_stride_uv, dst_abgr,
+                          dst_stride_abgr, &kYvuH709Constants, width, height);
+}
+
 // Convert NV21 to ABGR.
 LIBYUV_API
 int NV21ToABGR(const uint8_t* src_y,
